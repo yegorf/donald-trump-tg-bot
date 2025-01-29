@@ -27,7 +27,7 @@ fun generateProgressBar(barWidth: Int = 10): String {
     return "$days days left until the war end\n $filled$empty $safePercentage%"
 }
 
-fun getNext10amDate(): Date = Calendar.getInstance().apply {
+fun getNext10amDate(): Date = Calendar.getInstance(TimeZone.getTimeZone("Europe/Kiev")).apply {
     set(Calendar.HOUR_OF_DAY, 10)
     set(Calendar.MINUTE, 0)
     set(Calendar.SECOND, 0)
