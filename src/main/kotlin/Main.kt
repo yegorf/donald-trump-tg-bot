@@ -22,7 +22,7 @@ fun generateProgressBar(barWidth: Int = 10): String {
     val filled = "▰".repeat(filledCount)
     val empty = "▱".repeat(barWidth - filledCount)
 
-    return "$days left until the war end\n $filled$empty $safePercentage%"
+    return "$days days left until the war end\n $filled$empty $safePercentage%"
 }
 
 fun main() {
